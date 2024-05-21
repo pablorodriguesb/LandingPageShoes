@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<link rel="stylesheet" href="./styles/output.css" />
+
+<title>PF10 Store</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+
+<!-- HEADER  -->
+<header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+<div class="w-full h-full flex flex-col justify-center items-center">
+    <img
+    src="./assets/tenisbody.png"
+    alt="Logo PF10 Store"
+    class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+    />
+    <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+        PF10 Store</h1>
+
+        <span class=" text-white font-medium">Rua Francisco Giongo, 375 - Vila Dainese - AMERICANA</span>
+
+        <div class=" bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+
+        <span class="text-white font-medium">Seg á Dom - 17:00 as 00:00</span>
+    </div>
+
+</div>
+</header>
+<!-- FIM DO HEADER  -->
+
+<h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+Conheça nosso menu
+</h2>
+
+<!-- INICIO MENU -->
+<div id="menu">
+
+<main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+        <img
+        src="./assets/adidas-campus.png"
+        alt="Adidas Campus"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold">Adidas Campus</p>
+            <p class="text-sm">Tênis Adidas Campus, cor vinho com listras brancas,
+            sola branca e cadarços vinho. Confortáveis e elegantes.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 549.99</p>
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Adidas Campus"
+                    data-price="549.99"
+                    >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIM PRODUTO ITEM-->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+        <img
+        src="./assets/adidas-xplr.png"
+        alt="Adidas X-PLR"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold">Adidas X-PLR</p>
+            <p class="text-sm">Tênis Adidas X-PLR, cor preta com detalhes em laranja, sola branca.
+                Confortável e estiloso. Ideal para uso diário.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 379.99</p>
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Adidas X-PLR"
+                    data-price="379.99"
+                    >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+<!-- FIM PRODUTO ITEM-->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+        <img
+        src="./assets/adidas-swiftrun.png"
+        alt="Adidas SwiftRun"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+        <div>
+            <p class="font-bold">Adidas SwiftRun</p>
+            <p class="text-sm">Tênis Adidas Swift Run leve, confortável, design moderno, branco com listras pretas,
+                    malha superior ventilada, sola resistente</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 699.99</p>
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Adidas SwiftRun"
+                    data-price="699.99"
+                    >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+<!-- FIM PRODUTO ITEM-->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+            <img
+            src="./assets/nike-airjordan.png"
+            alt="Nike Air Jordan"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+            <div>
+                <p class="font-bold">Nike Air Jordan</p>
+                <p class="text-sm">Tênis Nike Air Jordan para quem busca um tênis de alta qualidade,
+                    confortável e com um design clássico e moderno.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 1044.99</p>
+                    <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Nike Air Jordan"
+                        data-price="1044.99"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+<!-- FIM PRODUTO ITEM-->
+
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+    <img
+    src="./assets/nike-airuni.png"
+    alt="Nike Air Unissex"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    />
+
+    <div>
+        <p class="font-bold">Nike Air Unissex</p>
+        <p class="text-sm">Tênis Nike Air Unissex, design clássico, cores branco, cinza e preto,
+                material de malha ventilada, sola de borracha resistente</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 799.99</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Nike Air Unissex"
+                data-price="799.99"
+                >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+<!-- FIM PRODUTO ITEM-->
+
+<!-- PRODUTO ITEM -->
+<div class="flex gap-2">
+<img
+src="./assets/adidas-forumid.jpg"
+alt="Adidas Forum Mid"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+/>
+
+<div>
+    <p class="font-bold">Adidas Forum Mid</p>
+    <p class="text-sm">Tênis Adidas Forum Mid, cor branca com detalhes em azul, sola branca. Confortável e estiloso,
+        ideal para uso diário e prática esportiva</p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 859.90</p>
+        <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Adidas Forum Mid"
+            data-price="859.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+</div>
+
+</div>
+
+</main>
+<!-- FIM PRODUTO ITEM-->
+
+<div class="mx-auto max-w-7xl px-2 my-2"></div>
+<h2 class="font-bold text-3xl text-center mt-9 mb-6">
+    Acessórios
+</h2>
+</div>
+
+<!-- GRID ACESSORIOS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="accessories-menu"> 
+ 
+    <!-- PRODUTO ITEM -->
+    <div class="flex gap-2">
+        <img
+        src="./assets/nike-brasilia.png"
+        alt="Nike Brasilia 9.5 Unissex"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+    
+        <div>
+            <p class="font-bold">Nike Brasilia 9.5 Unissex</p>
+            <p class="text-sm">Bolsa Nike Brasilia 9.5:com capacidade para 60 litros, ideal para academia, viagens no
+             estilo Nike. Compre agora!</p>
+    
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 284.99</p>
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Adidas Brasilia 9.5 Unissex"
+                    data-price="284.99"
+                    >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    
+    </div>
+    <!-- FIM PRODUTO ITEM-->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-2">
+            <img
+            src="./assets/nike-meiacanoalto.png"
+            alt="Kit 3 Meias Cano Alto Nike"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+        
+            <div>
+                <p class="font-bold">Kit 3 Meias Cano Alto Nike</p>
+                <p class="text-sm">Kit com 3 meias Cano Alto Nike Air Jordan, eleve seu estilo e
+                    garanta conforto para seus pés.</p>
+        
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 151.99</p>
+                    <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Kit 3 Meias Cano Alto Nike"
+                        data-price="151.99"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        
+        </div>
+    <!-- FIM PRODUTO ITEM-->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img
+                src="./assets/adidas-bolsafem.png"
+                alt="Bolsa Feminina Adidas"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+            
+                <div>
+                    <p class="font-bold">Bolsa Feminina Adidas</p>
+                    <p class="text-sm">Versão limitada de lancamento, com autenticidade e exclusividade.</p>
+            
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 299.99</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Bolsa Feminina Adidas"
+                            data-price="299.99"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- FIM PRODUTO ITEM-->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img
+                src="./assets/adidas-bone.png"
+                alt="Bone Adidas"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+            
+                <div>
+                    <p class="font-bold">Boné Adidas</p>
+                    <p class="text-sm">Boné Adidas com protecão, estilo e conforto com as 3 listras clássicas e com maior durabilidade.</p>
+            
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 289.79</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Bone Adidas"
+                            data-price="289.79"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- FIM PRODUTO ITEM-->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img
+                src="./assets/nike-garrafa.png"
+                alt="Garrafa Termica Nike 709ml"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+            
+                <div>
+                    <p class="font-bold">Garrafa Térmica Nike 709ml</p>
+                    <p class="text-sm">Feita com material Tritan durável e um bico SwitchFlow para
+                     maior durabilidade, resistente a impactos.</p>
+            
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 165.00</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Garrafa Termica Nike 709ml"
+                            data-price="165.00"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+            <!-- FIM PRODUTO ITEM-->
+    </div>
+    <!-- FIM GRID ACESSORIOS -->
+
+</div>
+    <!-- FIM MENU -->
+
+    <!--MODAL CART -->
+    <div
+    id="cart-modal"
+    
+    class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+
+        <div class="bg-white px-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+            
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input
+            type="text"
+            placeholder="Digite seu endereço de entrega completo..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--FIM MODAL CART-->
+
+    <!--BUTTON CART FOOTER -->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+            <span id="cart-count">0</span>
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- FIM BUTTON CART FOOTER-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
