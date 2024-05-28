@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Finalizar Pedido</title>
+    <script src="./lidar_ordem.php"></script> <!-- Insira o caminho correto para o seu arquivo JavaScript -->
+</head>
+<body>
+    <div id="menu">
+        <!-- Items do menu serão gerados dinamicamente aqui -->
+    </div>
+    <div id="accessories-menu">
+        <!-- Items de acessórios serão gerados dinamicamente aqui -->
+    </div>
+    <button id="cart-btn">Ver Carrinho</button>
+    <div id="cart-modal" style="display:none;">
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <input type="text" id="address" placeholder="Endereço de Entrega">
+        <div id="address-warn" class="hidden">Por favor, insira um endereço.</div>
+        <button id="checkout-btn">Finalizar Pedido</button>
+        <button id="close-modal-btn">Fechar</button>
+    </div>
+    <span id="cart-count">0</span>
+    <span id="date-span"></span>
+</body>
+</html>

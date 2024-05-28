@@ -1,0 +1,1 @@
+SELECT * FROM pf10store.itenscarrinho

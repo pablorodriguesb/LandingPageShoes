@@ -1,0 +1,150 @@
+/* styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './output.css';
+
+
+/* Seus estilos personalizados abaixo */
+
+
+/* Estilos para o header */
+header {
+    width: 100%;
+    height: 420px;
+    background-image: url("./assets/fundobody1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+header span {
+    color: white;
+    font-weight: medium;
+}
+
+/* Estilos para o modal do carrinho */
+#cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#cart-modal .modal-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#cart-modal .modal-content #cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#cart-modal .modal-content #cart-items div {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#cart-modal .modal-content #cart-items div p {
+    margin: 0;
+}
+
+#cart-modal .modal-content #cart-items div button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#cart-modal .modal-content #cart-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#cart-modal .modal-content #address {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#cart-modal .modal-content #address-warn {
+    color: red;
+    margin-top: 5px;
+    display: none;
+}
+
+#cart-modal .modal-content .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#cart-modal .modal-content .modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#cart-modal .modal-content .modal-buttons #checkout-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+#cart-modal .modal-content .modal-buttons #close-modal-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Estilos para o botão do carrinho no footer */
+footer button#cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+footer button#cart-btn i {
+    margin-left: 5px;
+}
